@@ -1,0 +1,85 @@
+{% extends "header.html" %}
+{% block header %}
+<header class="masthead" style="background-image: url('{{ url_for('static', filename='img/img_5597.webp') }}')" alt="the sign at the entrance of the reesturant">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>OUR FOOD AND DRINKS MENU</h1>
+            <span class="subheading">steaks live jazz and cocktails everynight</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+        <div class="col-4 text-center">
+          <a href="{{ url_for('static', filename='menus/arch_steak_house_food.pdf') }}" target="_blank">
+            <h3>
+              <i class="fa-solid fa-utensils"></i> 
+                FOOD AND WINE LIST 
+              <i class="fa-solid fa-wine-glass"></i>
+            </h3>
+            <p></p>
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+        <div class="col-4 text-center">
+          <a href="{{ url_for('static', filename='menus/pudding.pdf') }}" target="_blank">
+            <h3>
+              <i class="fa-solid fa-ice-cream"></i>
+                DESSERT FOOD AND COCKTAILS 
+              <i class="fa-solid fa-martini-glass"></i>
+            </h3>
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+        <div class="col-4 text-center">
+          <a href="{{ url_for('static', filename='menus/bar.pdf') }}" target="_blank">
+            <h3>
+              <i class="fa-solid fa-champagne-glasses"></i> 
+                BAR DRINKS AND SNACKS 
+              <i class="fa-solid fa-whiskey-glass"></i>
+            </h3>
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-6">
+        <img src= {{ url_for( 'static' , filename='img/chicken.jpg') }}  alt="a chicken dish with rice">
+      </div>
+      <div class="col-6">
+        <img src= {{ url_for( 'static' , filename='img/cheers.jpg') }}  alt="č people cheers with wine ">
+      </div>
+    </div>
+    <br>
+    <h1 class="text-center">OUR OFFERS</h1>
+    <br>
+    <div class="row">
+      <div class="col-6">
+        <h2>Lunch Time 2/3 course deal </h2>
+        <h5>get a select range of our starters, mains and deserts.
+          Including our delicious rump steak frits.
+        </h5>
+        <h5>2 courses £21</h5>
+        <h5>3 courses £25</h5>
+        <p>the deal must include a main, with one or both starter and desserts.</p>
+        <p>available between 12:00-19:00</p>
+      </div>
+      <div class="col-6">
+        <h2>Happy Hour Every day</h2>
+        <h5>Get 25% of all cocktails including our very own 
+          original recipies </h5>
+          <h5>Classic cocktails £9</h5>
+          <h5>Signiture cocktails £9.75</h5>
+          <p>Happy hour between 16:00-18:00 everyday</p>
+          <p>does not include soft drinks, beers and wines</p>
+      </div>
+    </div>
+  </div>
+{% endblock %} 
+ 

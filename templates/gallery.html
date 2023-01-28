@@ -1,0 +1,31 @@
+{% extends "header.html" %}
+{% block header %}
+<header class="masthead" style="background-image: url('{{ url_for('static', filename='img/img_5597.webp') }}')" alt="the sign at the entrance of the reesturant">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>OUR PHOTO GARLLERY</h1>
+            <span class="subheading">steaks live jazz and cocktails everynight</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<section id="photos">
+    <img src= {{ url_for( 'static' , filename='img/bridge.jpg') }}  alt="the front of the reesturant">
+    <img src={{ url_for( 'static' , filename='img/champ.jpg') }} alt="waiter pouring a glass of champagne ">
+    <img src={{ url_for( 'static' , filename='img/cocktails.jpg') }} alt="cocktails on the bar">
+    <img src={{ url_for( 'static' , filename='img/img_5597.webp') }} alt="the sign at the entrance of the reesturant">
+    <img src={{ url_for( 'static' , filename='img/music.jpg') }} alt="live music being playd ">
+    <img src={{ url_for( 'static' , filename='img/steak_and_chips.jpg') }} alt="steak and chips dish">
+    <img src={{ url_for( 'static' , filename='img/the_big_one.jpg') }} alt="a 600g steak on a wooden bord">
+    <img src={{ url_for( 'static' , filename='img/cocktails2.jpg') }} alt="large group of people running ">
+    <img src={{ url_for( 'static' , filename='img/upstairs.jpg') }} alt="the upstairs part of the reesturant">
+    <img src= {{ url_for( 'static' , filename='img/cheers.jpg') }}  alt="č people cheers with wine ">
+    <img src= {{ url_for( 'static' , filename='img/chicken.jpg') }}  alt="a chicken dish with rice">
+
+</section>
+{% endblock %}    
+    

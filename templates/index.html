@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<header class="masthead" style="background-image: url('{{ url_for('static', filename='img/img_5597.webp') }}')" alt="the sign at the entrance of the reesturant">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>ARCH STEAK HOUSE</h1>
+          <span class="subheading">steaks live jazz and cocktails everynight</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+            <h2 class="post-title text-center">
+              MAIN RESTAURANT 
+            </h2>
+            <h3 class="post-subtitle text-center">
+              Enjoy stunning dishes from a variaty of steaks, chicken, salads,
+              burgers and so much more.
+            </h3>
+            <p></p>
+            <div class="row">
+              <div class="col-6 text-center">
+                <h4>Kitchen Opening Hours:</h4>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    monday: 12:-22:00
+                  </li>
+                  <li class="nav-item">
+                    tuesday: 12:00-22:30
+                  </li>
+                  <li class="nav-item">
+                    wednesday: 12:00-22:30
+                  </li>
+                  <li class="nav-item">
+                    thursday: 12:00-22:30
+                  </li>
+                  <li class="nav-item">
+                    friday: 12:00-22:30
+                  </li>
+                  <li class="nav-item">
+                    saturday: 12:00-22:30
+                  </li>
+                  <li class="nav-item">
+                    sunday: 12:00-22:00
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 text-center">
+                <h4>CONTACT INFORMATION</h4>
+                <ul class="navbar-nav ml-auto">
+                  <br>
+                  <li class="nav-item">
+                    Phone Number: 020 4657 3537
+                  </li>
+                  <li><p></p></li>
+                  <li class="nav-item">
+                    Email: archsteakhouse@archlondon.com
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <h2 class="post-title text-center">
+            OUR COCKTAIL BAR 
+          </h2>
+          <h3 class="post-subtitle text-center">
+            Enjoy a range of your favourite classic cocktails as well as our
+            original recipies created by our very own bars team
+          </h3>
+          <p></p>
+          <div class="row">
+            <div class="col-6 text-center">
+              <h4 class=>Bar Opening Hours:</h4>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  monday: 12:-22:00
+                </li>
+                <li class="nav-item">
+                  tuesday: 12:00-22:45
+                </li>
+                <li class="nav-item">
+                  wednesday: 12:00-22:45              
+                </li>
+                <li class="nav-item">
+                  thursday: 12:00-22:45
+                </li>
+                <li class="nav-item">
+                  friday: 12:00-23:15
+                </li>
+                <li class="nav-item">
+                  saturday: 12:00-23:15
+                </li>
+                <li class="nav-item">
+                  sunday: 12:00-22:00
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 text-center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.451397087559!2d-0.11866862405926604!3d51.504934110884335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b7e4f86ed9%3A0x70e372e30f4e0765!2sThe%20Archduke!5e0!3m2!1sen!2suk!4v1671456892076!5m2!1sen!2suk" width="450" height="337" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="post-preview">
+            <h2 class="post-title">
+              LIVE JAZZ 
+            </h2>
+            <h3 class="post-subtitle">
+              We have live music playing every evening from 19:00 and 
+              a full jazz band friday and saturday evenings from 21:30 till late at night
+            </h3>
+        </div>
+        <hr>
+        <!-- Pager -->
+      <div class="clearfix">
+        <a class="btn btn-primary float-right" href="{{ url_for('booking') }}">BOOK A TABLE NOW</a>
+      </div>
+    </div>
+  </div>
+</div> 
+
+{%endblock%} 
+    

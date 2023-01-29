@@ -1,6 +1,38 @@
-{% extends "header.html" %}
-{% block header %}
-<header class="masthead" style="background-image: url('{{ url_for('static', filename='img/img_5597.webp') }}')" alt="the sign at the entrance of the reesturant">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/clean-blog.min.css">
+    <script src="https://kit.fontawesome.com/f40cae7fe4.js" crossorigin="anonymous"></script>
+    <title>ARCH STEAK HOUSE</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand" href="/templates/index.html">ARCH STEAK HOUSE</a>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/templates/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/templates/booking.html">BOOKING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/templates/menu.html">OUR MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/templates/gallery.html">GARLLERY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header class="masthead" style="background-image: url('/static/img/img_5597.webp')"> alt="the sign at the entrance of the reesturant">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -93,4 +125,50 @@
       </div>
     </div>
   </div>
-{% endblock %}
+  <hr>
+    
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://facebook.com/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href=https://instagram.com/ target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fa-brands fa-instagram fa-stack-1x fa-inverse""></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Frank Brown 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="{{ url_for('static' , filename='vendor/jquery/jquery.min.js') }}"></script>
+      <script src="{{ url_for('static' , filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    
+    
+      <!-- Custom scripts for this template -->
+      <script src="{{ url_for('static' , filename='js/clean-blog.min.js') }}"></script>
+</html>

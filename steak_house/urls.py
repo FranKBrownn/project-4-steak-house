@@ -15,11 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from booking.views import index, home, menu, gallery, booking
 
 urlpatterns = [
+    path('', index, name='home'),
+    path('templates/index.html/', home, name='home'),
+    path('templates/menu.html/', menu, name='home'),
+    path('templates/gallery.html', gallery, name='gallery'),
+    path('templates/booking.html/', booking, name='home'),
     path('admin/', admin.site.urls),
-    path('booking/', include('booking.urls'), name='booking_urls'),
     path('summernote/', include('django_summernote.urls')),
-    
     
 ]

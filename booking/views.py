@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import generic
 from django.template import loader
-from .models import Post
+from .models import Booking
 
 
 def index(request):
@@ -17,7 +17,11 @@ def home(request):
 
 def menu(request):
     template = loader.get_template('menu.html')
-    return HttpResponse(template.render()) 
+    return HttpResponse(template.render())
+
+
+# def MakeBooking(request):
+#     if request.method == 'POST':
 
 
 def booking(request):
@@ -30,3 +34,16 @@ def gallery(request):
     return HttpResponse(template.render())         
 
 
+def MenuFoodWine(request):
+    template = loader.get_template('/static/menus/arch_steak_house_food.pdf')
+    return HttpResponse(template.render())
+
+
+def MenuPudding(request):
+    template = loader.get_template('')
+    return HttpResponse(template.render())  
+
+
+def MenuDrinks(request):
+    template = loader.get_template('')
+    return HttpResponse(template.render())  

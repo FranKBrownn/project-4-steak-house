@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from booking.views import index, home, menu, gallery, booking
+from booking.views import index, home, menu, gallery, booking, MenuFoodWine
 
 urlpatterns = [
     path('', index, name='home'),
@@ -23,6 +23,7 @@ urlpatterns = [
     path('templates/menu.html/', menu, name='home'),
     path('templates/gallery.html', gallery, name='gallery'),
     path('templates/booking.html/', booking, name='home'),
+    path('static/menus/arch_steak_house_food.pdf', MenuFoodWine, name='foodmenu'),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
     

@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Post
+from .models import Booking
 from django_summernote.admin import SummernoteModelAdmin
 
 
-@admin.register(Post)
+@admin.register(Booking)
 class PostAdmin(SummernoteModelAdmin):
 
     summernote_feilds = ('content')

@@ -36,6 +36,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["steak-house97.herokuapp.com", "localhost"]
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 
 # Application definition
 

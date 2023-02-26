@@ -25,6 +25,14 @@ def menu(request):
 
 
 def booking(request):
+    if request.method == 'POST':
+        first_name = request.POST.get('fname')
+        last_name = request.POST.get('lname')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        date = request.POST.get('date')
+        time = request.POST.get('time')
+        
     template = loader.get_template('booking.html')
     return HttpResponse(template.render()) 
 

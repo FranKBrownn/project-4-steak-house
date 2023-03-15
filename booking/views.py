@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.views import generic
 from django.template import loader
 from .models import Booking
+from .forms import BookingForm
 
 
 def index(request):
@@ -26,6 +27,7 @@ def menu(request):
 
 def booking(request):
     if request.method == 'POST':
+        print("done")
         fname = request.POST.get('fname')
         lname = request.POST.get('lname')
         email = request.POST.get('email')
@@ -41,9 +43,13 @@ def booking(request):
             time=time,
         )
         return redirect('Thank_You')
+    form = BookingForm()  
+    context = {
+        'form':form
+    }  
     template = loader.get_template('booking.html')
     # return HttpResponse(template.render())
-    return render(request, 'booking.html')
+    return render(request, 'booking.html', context)
 
 
 def gallery(request):

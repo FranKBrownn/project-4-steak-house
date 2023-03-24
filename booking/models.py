@@ -4,13 +4,12 @@ from cloudinary.models import CloudinaryField
 
 
 class Booking(models.Model):
-    fname = models.CharField(max_length=15, blank=False)
-    lname = models.CharField(max_length=15, blank=False)
-    email = models.EmailField(unique=True, blank=False)
-    number = models.IntegerField(blank=False)
-    date = models.DateField(blank=False)
-    time = models.TimeField(blank=False)
-    notes = models.CharField(max_length=50, blank=False)
+    Name = models.CharField(max_length=15, blank=False)
+    Email = models.EmailField(unique=True, blank=False)
+    Phone = models.IntegerField(blank=False)
+    Date = models.DateField(blank=False)
+    Time = models.TimeField(blank=False)
+    Notes = models.CharField(max_length=50, blank=False)
 
     def __str__(self):
         return self.fname

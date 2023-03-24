@@ -27,25 +27,14 @@ def menu(request):
 
 def booking(request):
     if request.method == 'POST':
-        print("done")
-        fname = request.POST.get('fname')
-        lname = request.POST.get('lname')
-        email = request.POST.get('email')
-        phone = request.POST.get('phone')
-        date = request.POST.get('date')
-        time = request.POST.get('time')
-        Booking.objects.create(
-            fname=fname,
-            lname=lname,
-            email=email,
-            phone=phone,
-            date=date,
-            time=time,
-        )
-        return redirect('Thank_You')
-    form = BookingForm()  
+        form = BookingForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('Thank_You')
+    form = BookingForm() 
+
     context = {
-        'form':form
+        'form': form
     }  
     template = loader.get_template('booking.html')
     # return HttpResponse(template.render())
